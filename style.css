@@ -3,7 +3,8 @@
     --bg-color: #f0edff;           /* Light Lavender */
     --text-color: #412d53;         /* Dark Purple */
     --accent-color-1: #804c9a;     /* Medium Purple */
-    --accent-color-2: #0097b2;     /* Teal */
+    --accent-color-2: #c23b71;     /* Deep Rose */
+    --hover-color: #a72f5f;
     
     /* Complementary Colors */
     --card-bg: #ffffff;            /* Clean white for content readability */
@@ -112,7 +113,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #007a90;
+    background-color: var(--hover-color);
     color: var(--white);
 }
 
