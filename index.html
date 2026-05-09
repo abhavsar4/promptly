@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROMPTly | Clinical Certainty, Delivered at Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
 
@@ -29,38 +28,89 @@
             <h1>PROMPTly</h1>
             <h2>Clinical Certainty, Delivered at Home!</h2>
             <p>An integrated diagnostic pad for the immediate detection of Premature Rupture of Membranes (PROM), empowering expectant mothers with a reliable, non-invasive safety net.</p>
-            <div class="cta-buttons">
-                <a href="purpose.html" class="btn btn-primary">The Problem</a>
-                <a href="product.html" class="btn btn-secondary">The Solution</a>
-            </div>
         </div>
     </header>
 
-    <main class="media-section">
+    <div class="parallax-section"></div>
+
+    <section class="overview-section">
         <div class="container">
-            
-            <section class="video-container">
-                <h3>3-Minute Pitch</h3>
+            <div class="section-heading">
+                <h2>Project Overview</h2>
+                <p>Explore the different facets of the PROMPTly diagnostic system.</p>
+            </div>
+
+            <div class="summary-rows">
+                
+                <div class="summary-card">
+                    <div class="card-image">
+                        <img src="assets/prom-diagram.png" alt="PROM diagram">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-icon">⚠️</div>
+                        <h3>The Problem</h3>
+                        <p>1 in 10 pregnancies suffer from PROM. Currently, mothers are forced to rely on inaccurate "look and smell" tests or face $1,800+ unnecessary ER visits for false alarms.</p>
+                        <a href="purpose.html" class="btn btn-outline">Read the Needs Statement &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="summary-card row-reverse">
+                    <div class="card-image">
+                        <img src="assets/layers.png" alt="Our Device">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-icon">💡</div>
+                        <h3>The Solution</h3>
+                        <p>A non-invasive, passive diagnostic pad leveraging proprietary paper microfluidics and the clinical gold-standard PAMG-1 biomarker to deliver immediate certainty at home.</p>
+                        <a href="product.html" class="btn btn-outline">Explore the Product &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="card-image">
+                        <img src="assets/TAM-SAM-SOM.png" alt="Market">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-icon">📈</div>
+                        <h3>Market & Strategy</h3>
+                        <p>Targeting a $1.8B global TAM. At $149.99 per pack, PROMPTly shifts the financial burden from expensive acute care to affordable prevention, saving insurers millions.</p>
+                        <a href="business.html" class="btn btn-outline">View Competitor Analysis &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="summary-card row-reverse">
+                    <div class="card-image">
+                        <img src="assets/team-photo.jpg" alt="Our Device">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-icon">🤝</div>
+                        <h3>The Team</h3>
+                        <p>A multidisciplinary group of engineers and researchers, driven by personal experience and backed by clinical mentors, dedicated to improving maternal health outcomes.</p>
+                        <a href="contact.html" class="btn btn-outline">Meet the Founders &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <main class="media-section" style="background-color: var(--card-bg); padding-top: 60px;">
+        <div class="container">
+            <section class="video-container" style="max-width: 800px; margin: 0 auto; box-shadow: none; border: 2px solid var(--bg-color);">
+                <h3>Our 3-Minute Pitch</h3>
                 <p>A brief overview of the PROM crisis and how PROMPTly is poised to solve it.</p>
                 <div class="video-wrapper">
                     <iframe src="https://www.youtube.com/embed/placeholder1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </section>
-
-            <section class="video-container">
-                <h3>Full Boardroom Presentation</h3>
-                <p>Deep dive into our product development, competitive edge, and go-to-market strategy.</p>
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/placeholder2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-            </section>
-
         </div>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="logo" style="color: var(--white); margin-bottom: 15px;">PROMPTly</div>
+            <div class="logo" style="color: var(--white); margin-bottom: 15px;">
+                <img src="logo.png" alt="PROMPTly Logo" style="height: 45px; margin: 0 auto; display: block; filter: brightness(0) invert(1);">
+            </div>
             <p>Empowering expectant mothers with clinical certainty.</p>
             <div style="margin-top: 20px;">
                 <a href="mailto:contact@promptly.com" style="color: var(--accent-color-2); font-weight: bold;">contact@promptly.com</a>
