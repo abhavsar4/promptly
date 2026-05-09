@@ -1,6 +1,5 @@
 Home:
 hero image on top
-decide video pitch layout
 
 Purpose:
 PROM diagram

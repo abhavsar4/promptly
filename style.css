@@ -804,3 +804,44 @@ footer p {
         background-attachment: scroll; /* Disables parallax on mobile to prevent scrolling glitches */
     }
 }
+
+/* --- PURPOSE PAGE IMAGE STYLES --- */
+.card-image-full {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.card-image-full img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image-row-side-by-side {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.image-row-side-by-side img {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Make side-by-side images stack vertically on mobile screens */
+@media (max-width: 768px) {
+    .image-row-side-by-side {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-row-side-by-side img {
+        width: 100%;
+    }
+}
