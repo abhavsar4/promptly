@@ -11,10 +11,6 @@ add instruction diagram from the pitch deck
 
 Business:
 add TAM/SAM/SOM diagram
-revenue model diagram
-COGS diagram
-update go-to-market timeline
-increase emphases in competitor analysis
 
 Contact:
 professionalize experiences
