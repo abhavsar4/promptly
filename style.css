@@ -516,8 +516,8 @@ footer p {
 }
 
 .team-avatar {
-    width: 80px;
-    height: 80px;
+    width: 150px;       /* Increased from 80px */
+    height: 150px;      /* Increased from 80px */
     background-color: var(--bg-color);
     color: var(--accent-color-1);
     border-radius: 50%;
@@ -525,9 +525,10 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;  /* Made initials bigger just in case any photos are missing */
     font-weight: bold;
-    border: 2px solid var(--accent-color-1);
+    border: 3px solid var(--accent-color-1); /* Made the border slightly thicker */
+    object-fit: cover;  /* Ensures real photos don't stretch or warp */
 }
 
 .team-card:nth-child(even) .team-avatar {
@@ -844,4 +845,67 @@ footer p {
     .image-row-side-by-side img {
         width: 100%;
     }
+}
+
+/* --- SIZING FOR SPECIFIC IMAGES --- */
+.card-image-medium {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.card-image-medium img {
+    max-width: 50%; /* Shrinks the image to half the container width */
+    min-width: 250px; /* Ensures it doesn't get too tiny on mobile */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- MENTOR CARDS FOR CONTACT PAGE --- */
+.mentor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.mentor-card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 250px;
+}
+
+.mentor-avatar {
+    width: 150px;       /* Increased from 100px */
+    height: 150px;      /* Increased from 100px */
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-bottom: 15px;
+    border: 3px solid var(--accent-color-1);
+}
+
+.mentor-card h4 {
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+/* --- CONTACT FORM BUTTON STYLES --- */
+.contact-form .btn-primary {
+    padding: 16px 32px;      /* Increases height and internal spacing */
+    font-size: 1.2rem;       /* Makes the text larger */
+    border-radius: 50px;     /* Creates the fully rounded "pill" ends */
+    border: none;            /* Removes default browser borders */
+    cursor: pointer;         /* Changes cursor to a hand on hover */
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: var(--accent-color-1); /* Swaps color on hover for a nice effect */
+    transform: translateY(-2px);             /* Gives a slight "lift" effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Adds a shadow on hover */
 }
