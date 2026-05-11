@@ -909,3 +909,38 @@ footer p {
     transform: translateY(-2px);             /* Gives a slight "lift" effect */
     box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Adds a shadow on hover */
 }
+
+/* --- SUB-BULLET INDENTATION --- */
+.ui-list ul {
+    padding-left: 25px; /* Adjust this value to increase/decrease the indent */
+    margin-top: 5px;    /* Adds a little breathing room above the sub-bullets */
+    list-style-type: circle; /* Changes the sub-bullet style so it looks different from the main bullet */
+}
+
+.ui-list ul li {
+    font-size: 1rem; /* Makes the sub-bullets slightly smaller than the main text */
+    margin-bottom: 5px; /* Tighter spacing between sub-bullets */
+}
+
+/* --- UPDATED COMPETITOR TABLE STYLES --- */
+.center-header {
+    text-align: center !important;
+}
+
+.competitor-logo {
+    max-height: 40px;       /* Keeps logos a uniform, manageable height */
+    width: auto;
+    max-width: 120px;       /* Prevents wide logos from stretching the columns */
+    display: block;
+    margin: 0 auto;         /* Centers the logo in the header cell */
+}
+
+.yes-no-cell {
+    font-size: 1.3rem;      /* Makes the Yes/No and $$$ text larger */
+    text-align: center;     /* Centers the text under the logos */
+}
+
+/* Optional: Override the default left-alignment for the first column of the body to keep the table balanced */
+.competitor-table tbody td:first-child {
+    text-align: left;
+}
