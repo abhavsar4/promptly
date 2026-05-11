@@ -2,9 +2,7 @@ Home:
 hero image on top
 
 Purpose:
-PROM diagram
-visualize the dangerous choice
-update francisco's story, add pictures
+
 
 Product:
 update the architecture
@@ -19,9 +17,5 @@ update go-to-market timeline
 increase emphases in competitor analysis
 
 Contact:
-add headshots
 professionalize experiences
-add mentor headshots
-add Peter Crosby as mentor
-update email
-send messasge button bigger and more styled
+test if send message button works
