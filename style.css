@@ -944,3 +944,15 @@ footer p {
 .competitor-table tbody td:first-child {
     text-align: left;
 }
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.8rem; }
+    .container { padding: 0 15px; }
+    .navbar { padding: 10px; }
+    
+    /* Force anything too wide to stay inside the box */
+    * {
+        max-width: 100vw;
+        overflow-wrap: break-word;
+    }
+}
