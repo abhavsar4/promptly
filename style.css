@@ -784,6 +784,11 @@ footer p {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .summary-card {
+        padding: 20px; /* Reduce from 40px to save space */
+        width: 100%;   /* Ensure it stays within bounds */
+    }
+    
     .summary-card, .summary-card.row-reverse {
         flex-direction: column;
         text-align: center;
@@ -947,23 +952,15 @@ footer p {
     text-align: left;
 }
 
-/*
+
 @media (max-width: 480px) {
     .hero h1 { 
-        font-size: 1.8rem; 
+        font-size: 1.8rem; /* Shrinks the giant title */
     }
-    
-    .navbar { 
-        padding: 10px; 
-    }
-    
-    .container {
-        padding: 0 15px;
-        max-width: 100vw;
-        overflow-wrap: break-word; 
+    .hero img {
+        height: 60px; /* Shrinks the hero image */
     }
 }
-    */
 
 .menu-toggle, .hamburger {
     display: none;
