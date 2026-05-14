@@ -5,12 +5,10 @@ Purpose:
 
 
 Product:
-update the architecture
-add diagrams
-add instruction diagram from the pitch deck
+
 
 Business:
-add TAM/SAM/SOM diagram
+
 
 Contact:
 professionalize experiences
