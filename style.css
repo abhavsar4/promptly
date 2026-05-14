@@ -19,11 +19,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
@@ -86,12 +81,6 @@ a:hover {
     color: var(--white);
     text-align: center;
     padding: 80px 20px;
-    width: 100%;
-}
-
-.hero img {
-    max-width: 100%;       /* Ensures the logo/image never spills out */
-    height: auto;
 }
 
 .hero h1 {
@@ -795,11 +784,6 @@ footer p {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .summary-card {
-        padding: 20px; /* Reduce from 40px to save space */
-        width: 100%;   /* Ensure it stays within bounds */
-    }
-    
     .summary-card, .summary-card.row-reverse {
         flex-direction: column;
         text-align: center;
@@ -963,37 +947,23 @@ footer p {
     text-align: left;
 }
 
-/* --- LARGE DOWNLOAD BUTTON --- */
-.btn-large {
-    padding: 16px 32px !important;
-    font-size: 1.2rem !important;
-    border-radius: 50px !important;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.btn-large:hover {
-    background-color: var(--accent-color-1);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/* --- FINANCIAL TABLE HIGHLIGHTS --- */
-.bold-row td {
-    font-weight: bold;
-    color: var(--accent-color-2); /* Uses your Deep Rose color to make them pop! */
-    background-color: rgba(194, 59, 113, 0.05); /* Very light background tint */
-}
-
-
+/*
 @media (max-width: 480px) {
     .hero h1 { 
-        font-size: 1.8rem; /* Shrinks the giant title */
+        font-size: 1.8rem; 
     }
-    .hero img {
-        height: 60px; /* Shrinks the hero image */
+    
+    .navbar { 
+        padding: 10px; 
+    }
+    
+    .container {
+        padding: 0 15px;
+        max-width: 100vw;
+        overflow-wrap: break-word; 
     }
 }
+    */
 
 .menu-toggle, .hamburger {
     display: none;
@@ -1042,19 +1012,6 @@ footer p {
     .menu-toggle:checked + .hamburger span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
     .menu-toggle:checked + .hamburger span:nth-child(2) { opacity: 0; }
     .menu-toggle:checked + .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(6px, -7px); }
-}
-
-.container, .hero-content, .summary-card {
-    width: 100% !important;
-    max-width: 100vw !important;
-    overflow-wrap: break-word;
-}
-
-/* Ensure the background gradient covers the full width always */
-.hero, .overview-section {
-    width: 100%;
-    position: relative;
-    left: 0;
 }
 
 /* --- IMAGE ATTRIBUTION STYLES --- */
