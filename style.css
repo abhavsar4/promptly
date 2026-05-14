@@ -742,8 +742,7 @@ footer p {
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Changed from cover to show the full image */
-    background-color: var(--card-bg); /* Optional: adds a clean background to gaps */
+    object-fit: cover; /* Ensures image fills the box without stretching */
 }
 
 /* Card Text */
@@ -797,8 +796,8 @@ footer p {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .summary-card {
-        padding: 20px;
-        flex-direction: column; /* Ensures text stays below the full image */
+        padding: 20px; /* Reduce from 40px to save space */
+        width: 100%;   /* Ensure it stays within bounds */
     }
     
     .summary-card, .summary-card.row-reverse {
@@ -815,9 +814,9 @@ footer p {
     }
 
     .card-image {
-        height: auto;
-        height: 300px;
+        flex: 1 1 auto;
         width: 100%;
+        height: 200px;
     }
     
     .parallax-section {
@@ -873,9 +872,11 @@ footer p {
 }
 
 .card-image-medium img {
-    max-width: 100%; /* Allow it to take full width on small screens */
+    max-width: 50%; /* Shrinks the image to half the container width */
+    min-width: 250px; /* Ensures it doesn't get too tiny on mobile */
     height: auto;
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* --- MENTOR CARDS FOR CONTACT PAGE --- */
