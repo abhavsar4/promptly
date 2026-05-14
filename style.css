@@ -259,6 +259,7 @@ footer p {
     box-shadow: none;
     padding: 0;
 }
+/*for staging*/
 
 .double-column .column {
     flex: 1;
@@ -443,7 +444,8 @@ footer p {
     margin-bottom: 5px;
 }
 
-/* Competitor Table */
+/* --- UPDATED COMPETITOR TABLE STYLES --- */
+
 .table-responsive {
     overflow-x: auto;
     margin-top: 20px;
@@ -455,32 +457,65 @@ footer p {
     min-width: 600px;
 }
 
-.competitor-table th, .competitor-table td {
+/* Base styling for all cells */
+.competitor-table th, 
+.competitor-table td {
     padding: 15px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #eee;
+    vertical-align: middle;
 }
 
+/* Header Row (Medium Purple) */
 .competitor-table th {
-    background-color: var(--bg-color);
-    color: var(--accent-color-1);
+    background-color: var(--bg-color); /* Light Lavender */
+    color: var(--accent-color-1);     /* Medium Purple */
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
+/* 1. Icon Cell Base Styling (Dark Purple Default) */
+.yes-no-cell {
+    font-size: 3rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    padding: 10px;
+    color: #6b6565 !important; /* Light gray for default "no" state */
+}
+
+/* 2. PROMPTly Column Highlight (Medium Purple Override) */
+.competitor-table td.highlight.yes-no-cell {
+    color: var(--accent-color-1) !important; /* #804c9a */
+}
+
+/* 3. Highlight Column Box & Border Styling */
 .competitor-table td.highlight {
-    background-color: rgba(0, 151, 178, 0.05); /* very light teal */
-    font-weight: 600;
-    color: var(--accent-color-2);
-    border-left: 3px solid var(--accent-color-2);
-    border-right: 3px solid var(--accent-color-2);
+    background-color: rgba(128, 76, 154, 0.05); /* Very light tint of Medium Purple */
+    border-left: 2px solid var(--accent-color-1);
+    border-right: 2px solid var(--accent-color-1);
 }
 
-/* Make sure the highlight borders connect vertically */
+/* Connect the Highlight Borders Vertically */
 .competitor-table tbody tr:first-child td.highlight {
-    border-top: 3px solid var(--accent-color-2);
+    border-top: 2px solid var(--accent-color-1);
 }
+
 .competitor-table tbody tr:last-child td.highlight {
-    border-bottom: 3px solid var(--accent-color-2);
+    border-bottom: 2px solid var(--accent-color-1);
+}
+
+/* Center logos in headers */
+.center-header {
+    text-align: center !important;
+}
+
+.competitor-logo {
+    max-height: 40px;
+    width: auto;
+    max-width: 120px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -731,7 +766,7 @@ footer p {
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image fills the box without stretching */
+    object-fit: contain; /* Ensures image fills the box without stretching */
 }
 
 /* Card Text */
@@ -924,28 +959,6 @@ footer p {
     margin-bottom: 5px; /* Tighter spacing between sub-bullets */
 }
 
-/* --- UPDATED COMPETITOR TABLE STYLES --- */
-.center-header {
-    text-align: center !important;
-}
-
-.competitor-logo {
-    max-height: 40px;       /* Keeps logos a uniform, manageable height */
-    width: auto;
-    max-width: 120px;       /* Prevents wide logos from stretching the columns */
-    display: block;
-    margin: 0 auto;         /* Centers the logo in the header cell */
-}
-
-.yes-no-cell {
-    font-size: 1.3rem;      /* Makes the Yes/No and $$$ text larger */
-    text-align: center;     /* Centers the text under the logos */
-}
-
-/* Optional: Override the default left-alignment for the first column of the body to keep the table balanced */
-.competitor-table tbody td:first-child {
-    text-align: left;
-}
 
 /*
 @media (max-width: 480px) {
