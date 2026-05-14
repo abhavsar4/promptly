@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
-
 <body>
 
     <nav class="navbar">
@@ -27,7 +25,7 @@
         </label>
 
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" >Home</a></li>
             <li><a href="purpose.html">Our Purpose</a></li>
             <li><a href="product.html" class="active">Product</a></li>
             <li><a href="business.html">Our Business</a></li>
@@ -44,66 +42,65 @@
 
     <main class="content-section">
         <div class="container">
-
-            <div class="summary-card"
-                style="border-top: 5px solid var(--accent-color-2); border-right: none; border-left: none; margin-bottom: 40px;">
-                <div class="card-text">
-                    <h3 style="color: var(--accent-color-2);">Clinical Certainty at Home</h3>
-                    <p>PROMPTly transforms a standard hygiene product into a powerful diagnostic tool. By integrating
-                        paper microfluidics and a lateral flow immunoassay into an absorbent pad, we provide expectant
-                        mothers with immediate clinical certainty regarding fluid leakage without requiring invasive
-                        swabs or a change in daily routine.</p>
-                </div>
-
-                <div class="card-image">
-                    <img src="assets/pad-offerings.png" alt="Clinical Certainty Diagram">
-                </div>
+            
+            <div class="info-card" style="text-align: center; border-left: none; border-top: 5px solid var(--accent-color-2);">
+                <h3 style="color: var(--accent-color-2);">Clinical Certainty at Home</h3>
+                <p>PROMPTly transforms a standard hygiene product into a powerful diagnostic tool. By integrating paper microfluidics and a lateral flow immunoassay into an absorbent pad, we provide expectant mothers with immediate clinical certainty regarding fluid leakage without requiring invasive swabs or a change in daily routine.</p>
             </div>
 
-            <div class="info-card"
-                style="text-align: center; border-left: none; border-top: 5px solid var(--accent-color-1);">
-                <h3 style="color: var(--accent-color-1);">Easy as 1-2-3!</h3>
-                <p>Our device is very easy to use: the mother just wears the pad daily during the last month of
-                    pregnancy, like she would a normal sanitary pad. If there is fluid leakage, the pad automatically
-                    collects the fluid. After a maximum wait time of 15 minutes, she interprets the results using a
-                    universally recognized standard (similar to an at-home COVID-19 or pregnancy test):</p>
-                <ul class="ui-list">
-                    <li style="text-align: left;"><strong>One Line (Control):</strong> The test functioned properly, but
-                        no amniotic fluid is present. The mother can safely stay home.</li>
-                    <li style="text-align: left;"><strong style="color: #d9534f;">Two Red Lines:</strong> Positive
-                        detection of the PAMG-1 biomarker. A clear signal to the mother that ER is advised.</li>
-                </ul>
-                <div class="card-image-full" style="margin-top: 30px;">
-                    <img src="assets/123.png"
-                        alt="Visual readout showing one line for negative and two lines for a positive detection of PROM">
-                </div>
-            </div>
-
-            <div class="product-feature" style="border-top: 5px solid var(--accent-color-2);">
+            <div class="product-feature">
                 <div class="feature-text">
-                    <h3 style="color: #d9534f;">The Science (PAMG-1 Biomarker)</h3>
-                    <p>At the center of the device lies a Lateral Flow Test (LFT). This immunoassay is specifically
-                        calibrated to detect the presence of <strong>PAMG-1</strong>, the clinical gold-standard
-                        biomarker for amniotic fluid. This biochemical validation shifts the burden of diagnosis from a
-                        patient’s intuition to a proven scientific mechanism.</p>
+                    <h3>1. The Architecture (Layered Design)</h3>
+                    <p>Fluid passes through our soft upper mesh layer to enter the device. Beneath this, our conjugate layer, where our proprietary <strong>Cellulose Paper</strong> microfluidic channels take over, routing the fluid to a central embedded <strong>Lateral Flow Test Strip</strong>. Finally, a highly absorbent <strong>Sodium Polyacrylate (SAP)</strong> base layer safely absorbs any excess fluid, ensuring the diagnostic strip is never washed out or oversaturated. At the bottom, an impermeable layer of <strong>PET</strong> keeps everything contained in a nice package.</p>
+                </div>
+                <div class="card-image">
+                    <img src="assets/layers.png" alt="Layer diagram">
+                </div>
+            </div>
+
+            <div class="product-feature reverse">
+                <div class="feature-text">
+                    <h3>2. Fluid Dynamics & Microfluidics</h3>
+                    <p>Relying on capillary flow, our wedge-shaped, non-branching radial channel geometry accelerates fluid delivery directly to the testing strip. We optimized the pore radius and contact angle to ensure consistent assay activation in under two minutes, eliminating backflow and routing the sample perfectly every time.</p>
                 </div>
                 <div class="feature-image">
                     <figure style="margin: 0; text-align: center;">
-                        <img src="assets/LFT.avif" alt="Lateral flow test strip">
-                        <figcaption class="attribution">Image Credit: <a
-                                href="https://www.antibodiesinc.com/pages/back-to-basics-what-is-an-immunoassay"
-                                target="_blank"> Antibodies Inc.</a></figcaption>
+                        <img src="assets/channels-old.png" alt="Old channel design">
+                        <figcaption class="attribution">Dimensions in millimeters. An old channel design is presented to avoid intellectual property disclosure.</figcaption>
                     </figure>
                 </div>
             </div>
 
+            <div class="product-feature">
+                <div class="feature-text">
+                    <h3>3. The Science (PAMG-1 Biomarker)</h3>
+                    <p>At the center of the device lies a Lateral Flow Test (LFT). This immunoassay is specifically calibrated to detect the presence of <strong>PAMG-1</strong>, the clinical gold-standard biomarker for amniotic fluid. This biochemical validation shifts the burden of diagnosis from a patient’s intuition to a proven scientific mechanism.</p>
+                </div>
+                <div class="feature-image">
+                    <figure style="margin: 0; text-align: center;">
+                        <img src="assets/LFT.avif" alt="Lateral flow test strip">
+                        <figcaption class="attribution">Image Credit: <a href="https://www.antibodiesinc.com/pages/back-to-basics-what-is-an-immunoassay" target="_blank"> Antibodies Inc.</a></figcaption>
+                    </figure>
+                </div>
+            </div>
 
+            <div class="info-card" style="text-align: center; border-left: none; border-top: 5px solid var(--accent-color-1);">
+                <h3 style="color: var(--accent-color-1);" >Easy as 1-2-3!</h3>
+                <p>Our device is very easy to use: the mother just wears the pad daily during the last month of pregnancy, like she would a normal sanitary pad. If there is fluid leakage, the pad automatically collects the fluid. After a maximum wait time of 15 minutes, she interprets the results using a universally recognized standard (similar to an at-home COVID-19 or pregnancy test):</p>
+                <ul class="ui-list">
+                    <li><strong>One Line (Control):</strong> The test functioned properly, but no amniotic fluid is present (Negative). The mother can safely stay home.</li>
+                    <li><strong style="color: #d9534f;">Two Red Lines:</strong> Positive detection of the PAMG-1 biomarker. A clear signal to the mother that it is time to go to the hospital.</li>
+                </ul>
+                <div class="card-image-full" style="margin-top: 30px;">
+                    <img src="assets/123.png" alt="Visual readout showing one line for negative and two lines for a positive detection of PROM">
+                </div>
+                <p><br>If this 15 minute test had been available, Francisco’s mom wouldn’t have had to risk hers and her son’s life, then worry about hundreds of thousands of dollars in  medical bills.</p>
+            </div>
 
         </div>
 
         <div class="container">
-            <section class="video-container"
-                style="width: 100%; max-width: 1000px; margin: 0 auto; box-shadow: none; border-left: none; border-top: 5px solid var(--accent-color-1);">
+            <section class="video-container" style="width: 100%; max-width: 1000px; margin: 0 auto; box-shadow: none; border: 2px solid var(--bg-color);">
                 <h3>Demo Video</h3>
                 <p>How our pad works to instantly diagnose fluid leakage!</p>
                 <div class="video-wrapper">
@@ -119,14 +116,11 @@
             <div class="logo" style="color: var(--white); margin-bottom: 15px;">PROMPTly</div>
             <p>Empowering expectant mothers with clinical certainty.</p>
             <div style="margin-top: 20px;">
-                <a href="mailto:promptly.medtech@gmail.com"
-                    style="color: var(--accent-color-2); font-weight: bold;">promptly.medtech@gmail.com</a>
+                <a href="mailto:promptly.medtech@gmail.com" style="color: var(--accent-color-2); font-weight: bold;">promptly.medtech@gmail.com</a>
             </div>
-            <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 PROMPTly Team. All rights
-                reserved.</p>
+            <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 PROMPTly Team. All rights reserved.</p>
         </div>
     </footer>
 
 </body>
-
 </html>
